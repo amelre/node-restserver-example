@@ -34,9 +34,12 @@ let urlDB;
 if(process.env.NODE_ENV === 'dev'){
     urlDB = 'mongodb://localhost:27017/cafe'
 }else{
-
     urlDB = process.env.MONGO_URI
-
 }
-
 process.env.URLDB = urlDB;
+
+
+//==========
+//Google client Id
+//============
+process.env.CLIENT_ID = process.env.CLIENT_ID || '367189562737-vb0f8gnpdvqka38sdr4huc2okgpv19hu.apps.googleusercontent.com';
